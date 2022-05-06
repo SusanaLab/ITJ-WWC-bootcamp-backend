@@ -20,7 +20,7 @@ const saveComment = async (req, res, next) => {
 
   try {
     const savedComment = await CommentsService.saveComment(id, comment);
-
+// Todo this actually send an error and not 404
     if (!savedComment) {
       return res.status(404).json({ message: "Post not found" });
     }
