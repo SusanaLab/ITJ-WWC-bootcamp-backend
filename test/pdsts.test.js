@@ -7,7 +7,8 @@ describe("Calling /post with GET", () => {
         const response = await request(app).get("/post").send();
         expect(response.status).toBe(200);
     });
-
+//something needs to happend here
+//then another thing must happend here
     test("It should respond with an array", async () => {
         const response = await request(app).get("/post").send();
         expect(response.body).toBeInstanceOf(Array);
