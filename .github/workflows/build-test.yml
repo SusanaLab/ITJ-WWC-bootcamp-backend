@@ -6,8 +6,8 @@ name: Build and test backend
 on:
   pull_request:
     branches: [ main ]
-env: 
-  DB_URI:  ${{secrets.DB_URI}}
+env:
+  DB_URI: ${{secrets.DB_URI}}
 
 jobs:
   build:
